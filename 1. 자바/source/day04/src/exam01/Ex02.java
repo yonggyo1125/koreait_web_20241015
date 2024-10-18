@@ -7,14 +7,15 @@ public class Ex02 {
         int total = 0; // 더해지는 합
          */
 
-        int num = 1, total = 0;
+        int num = 1; // 초기값, 초기화식;
+        int total = 0;
 
-        while (num <= 100) {
+        while (num <= 100) { // 조건식
             //total = total + num;
             total += num;
 
             //num = num + 1; // 1씩 증가
-            num++;
+            num++; // 증감식(증가 또는 감소)
         }
 
         System.out.println(total);
