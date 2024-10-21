@@ -6,7 +6,16 @@ public class Q5 {
         for (int i = 2; i <= 9; i++) { // 단
             System.out.printf("--- %d단 ---%n", i);
             for (int j = 1; j <= 9; j++) { // 곱하는 수
+                if (j < i) {
+                    continue;
+                }
+
                 System.out.printf("%d X %d = %d%n", i, j, i * j);
+
+                /*
+                if (j >= i) {
+                    System.out.printf("%d X %d = %d%n", i, j, i * j);
+                } */
             }
         }
     }
