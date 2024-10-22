@@ -2,11 +2,21 @@ package exam01;
 
 public class Ex03 {
     public static void main(String[] args) {
-        int result = add(10, 20);
-        System.out.println(result);
+        int num1 = 10;
+        int num2 = 20;
+        int result = add(num1, num2);
+       // System.out.println(result);
     }
 
-    static int add(int num1, int num2) {
+    /**
+     * num1, num2, result - 함수가 호출 될때만 변수
+     *                    - 함수 지역내에서만 의미가 있는 변수
+     *                    - 지역변수
+     * @param num1
+     * @param num2
+     * @return
+     */
+    static int add(int num1, int num2) { // 함수 지역
 
         int result = num1 + num2;
 
