@@ -15,6 +15,12 @@ public class Student {
 
     }
 
+    public Student(int _id, String _name, String _major) {
+        id = _id;
+        name = _name;
+        major = _major;
+    }
+
     void showInfo() {
         System.out.printf("id=%d, name=%s, major=%s%n", id, name, major);
     }
