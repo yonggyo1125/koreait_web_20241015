@@ -7,6 +7,9 @@ public class Ex03 {
 
         int result2 = add(10, 20, 30); // int add(int, int, int)
         System.out.println("result2=" + result2);
+
+        double result3 = add(10.123, 20); // double add(double, int)
+        System.out.println("result3=" + result3);
     }
 
     static int add(int num1, int num2) {
