@@ -10,5 +10,7 @@ public class A { // 클래스 내부
 
     void method1() { // 인스턴스 메서드 : 객체가 생성되어야 호출 할 수 있는 메서드
         System.out.println("메서드1");
+        num4 = 40;
+        System.out.println(num4); // private 범위 변수는 인스턴스 메서드 내부에서만 접근이 가능
     }
 }
