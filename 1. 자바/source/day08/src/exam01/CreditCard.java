@@ -5,6 +5,7 @@ public class CreditCard {
     String holder; // 신용카드 소유자명
     String validDate; // 유효기간
 
+
     public CreditCard(int _cardNo, String _holder, String _validDate) {
         cardNo = _cardNo;
         holder = _holder;
