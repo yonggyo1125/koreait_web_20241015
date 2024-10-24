@@ -11,5 +11,11 @@ public class Ex02 {
         for (Constructor constructor : constructors) {
             System.out.println(constructor);
         }
+
+        // 메서드 구성 정보
+        Method[] methods = cls.getDeclaredMethods();
+        for (Method method : methods) {
+            System.out.println(method);
+        }
     }
 }
