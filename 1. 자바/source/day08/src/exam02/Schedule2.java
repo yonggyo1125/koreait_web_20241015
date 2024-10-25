@@ -6,9 +6,11 @@ public class Schedule2 {
     private int day;
 
     public Schedule2() {
+        this(2024, 10, 25);
+        /*
         year = 2024;
         month = 10;
-        day = 25;
+        day = 25; */
     }
 
     public Schedule2(int year, int month, int day) {
