@@ -7,5 +7,10 @@ public class Ex01 {
 
         s1.showInfo();
         s2.showInfo();
+
+
+
+
+        s1.id = 1002; // 인스턴스 변수인지 정적 변수인지???
     }
 }
