@@ -5,6 +5,6 @@ public class Ex01 {
         Outer out = new Outer();
         Calculator cal1 = out.method(30);
         int result = cal1.add(10, 20);
-        System.out.println(result);
+        System.out.println(result); // 60
     }
 }
