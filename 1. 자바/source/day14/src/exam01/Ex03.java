@@ -1,6 +1,6 @@
 package exam01;
 
-public class Ex01 {
+public class Ex03 {
     public static void main(String[] args) {
         int num1 = 10;
         int num2 = 2;
@@ -11,12 +11,9 @@ public class Ex01 {
             String str = null;
             str = str.toUpperCase(); // NullPointException
 
-        } catch (ArithmeticException e) {
+        } catch (RuntimeException e) { // 다형성을 이용한 다중 예외 처리
             System.out.println(e.getMessage());
 
-        } catch (NullPointerException e) {
-
-            System.out.println(e.getMessage());
         }
 
         System.out.println("계속 실행...");
