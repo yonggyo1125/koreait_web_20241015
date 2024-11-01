@@ -1,7 +1,7 @@
 package exam02;
 
 public class LoginService {
-    public void login(String userId, String password) throws UserIdNotFoundException, PasswordMismatchException { // 예외 전가 - 호출하는 쪽 처리를 미루기
+    public void login(String userId, String password) /* throws UserIdNotFoundException, PasswordMismatchException */ { // 예외 전가 - 호출하는 쪽 처리를 미루기
         // userId - user01, password - 1234
 
         if (!userId.equals("user01")) { // userId가 user01로 일치하지 않은 경우
