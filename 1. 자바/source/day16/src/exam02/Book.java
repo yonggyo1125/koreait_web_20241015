@@ -10,4 +10,9 @@ public class Book {
         this.author = author;
         this.publisher = publisher;
     }
+
+    @Override
+    public String toString() {
+        return String.format("title=%s, author=%s, publisher=%s%n", title, author, publisher);
+    }
 }
