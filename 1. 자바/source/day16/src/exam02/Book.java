@@ -1,5 +1,7 @@
 package exam02;
 
+import java.util.Objects;
+
 public class Book extends java.lang.Object {
     private String title; // 책 제목
     private String author; // 책 저자
@@ -21,6 +23,20 @@ public class Book extends java.lang.Object {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return Objects.equals(title, book.title) && Objects.equals(author, book.author) && Objects.equals(publisher, book.publisher);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(title, author, publisher);
+    }
+
+    /*
+    @Override
     public boolean equals(Object obj) { // 동등성 비교
 
         if (obj instanceof Book book) {
@@ -31,4 +47,9 @@ public class Book extends java.lang.Object {
 
         return false;
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(title, author, publisher);
+    } */
 }
