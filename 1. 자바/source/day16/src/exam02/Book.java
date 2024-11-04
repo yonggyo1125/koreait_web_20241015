@@ -19,4 +19,16 @@ public class Book extends java.lang.Object {
                 ", publisher='" + publisher + '\'' +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object obj) { // 동등성 비교
+
+        if (obj instanceof Book book) {
+            if (title.equals(book.title) && author.equals(book.author) && publisher.equals(book.publisher)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
 }
