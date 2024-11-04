@@ -1,6 +1,6 @@
 package exam02;
 
-public class Book {
+public class Book extends java.lang.Object {
     private String title; // 책 제목
     private String author; // 책 저자
     private String publisher; // 출판사
@@ -13,6 +13,10 @@ public class Book {
 
     @Override
     public String toString() {
-        return String.format("title=%s, author=%s, publisher=%s%n", title, author, publisher);
+        return "Book{" +
+                "title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", publisher='" + publisher + '\'' +
+                '}';
     }
 }
