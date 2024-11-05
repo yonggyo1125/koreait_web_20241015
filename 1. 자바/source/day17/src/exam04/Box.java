@@ -17,4 +17,11 @@ public class Box<T> {
     public T getItem() {
         return item;
     }
+
+    @Override
+    public String toString() {
+        //return item.info(); // Apple, Grape
+
+        return null;
+    }
 }
