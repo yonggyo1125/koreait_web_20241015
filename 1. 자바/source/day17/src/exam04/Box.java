@@ -7,6 +7,9 @@ public class Box<T> {
     // 정적 변수는 자료형을 명시하는게 필수!(지네릭 타입 사용 불가)
     //private static T item2;
 
+    // 배열을 생성하는 new 연산자는 자료형이 명확하게 결정되어 있어야 할당될 공간을 계산할 수 있다! - 배열에도 지네릭 타입 사용 X
+    //private T[] items = new T[3];
+
     public void setItem(T item) {
         this.item = item;
     }
