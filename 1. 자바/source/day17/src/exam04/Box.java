@@ -1,7 +1,7 @@
 package exam04;
 
-public class Box<T> {
-    private T item;
+public class Box<T extends Fruit & Eatable> {
+    private T item;  // Apple, Grape, Banana, Fruit
 
     // 정적 변수는 처음부터 공간을 할당 받으므로 처음부터 공간의 크기를 알필요 있음!
     // 정적 변수는 자료형을 명시하는게 필수!(지네릭 타입 사용 불가)
@@ -20,8 +20,8 @@ public class Box<T> {
 
     @Override
     public String toString() {
-        //return item.info(); // Apple, Grape
+        //return item.info(); // Fruit
 
-        return null;
+        return item.info(); // Fruit info 메서드
     }
 }
