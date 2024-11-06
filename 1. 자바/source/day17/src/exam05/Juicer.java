@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Juicer {
     // 와일드 카드
-    public static void make(FruitBox<?> fruitBox) {
+    public static void make(FruitBox<? extends Fruit> fruitBox) {
         List<?> items = fruitBox.getItems();
         System.out.println(items);
     }

@@ -1,7 +1,8 @@
 package exam05;
 
-public class Grape  {
-    public String info() {
+public class Grape extends Fruit {
+    @Override
+    public String toString() {
         return "포도";
     }
 }

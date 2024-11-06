@@ -1,8 +1,8 @@
 package exam05;
 
-public class Apple extends Fruit {
+public class Toy {
     @Override
     public String toString() {
-        return "사과";
+        return "장난감";
     }
 }
