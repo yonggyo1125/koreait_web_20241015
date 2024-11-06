@@ -1,7 +1,11 @@
 package exam05;
 
-public class Juicer {
-    public static void make(FruitBox<Apple> apples) {
+import java.util.List;
 
+public class Juicer {
+
+    public static void make(FruitBox<Apple> appleBox) {
+        List<Apple> items = appleBox.getItems();
+        System.out.println(items);
     }
 }
