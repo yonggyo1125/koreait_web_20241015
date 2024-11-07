@@ -8,5 +8,7 @@ import java.lang.annotation.Target;
 @Target({TYPE, FIELD, METHOD, PARAMETER})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface MyAnno {
-    String value(); // 기본 설정
+    String value() default "값1"; // 기본 설정
+    int max() default 100;
+    int[] numbers() default { 10, 20 };
 }
