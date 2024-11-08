@@ -14,6 +14,8 @@ public class Ex04 {
         items.add("항목4");
         items.add("항목5");
 
+        items.forEach(System.out::println);
+
         ListIterator<String> iter = items.listIterator();
         while(iter.hasNext()) { // 순방향 조회
             String item = iter.next();
