@@ -16,8 +16,15 @@ public class Ex04 {
 
         ListIterator<String> iter = items.listIterator();
         while(iter.hasNext()) { // 순방향 조회
-
+            String item = iter.next();
+            int index = iter.nextIndex();
+            System.out.printf("item=%s, index=%d%n", item, index);
         }
 
+        while(iter.hasPrevious()) { // 역방향 조회
+            String item = iter.previous();
+            int index = iter.previousIndex();
+            System.out.printf("item=%s, index=%d%n", item, index);
+        }
     }
 }
