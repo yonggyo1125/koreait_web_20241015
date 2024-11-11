@@ -16,10 +16,14 @@ public class Ex02 {
         */
         int sum = Arrays.stream(nums).filter(new IntPredicate() {
             @Override
-            public boolean test(int value) {
-                return false;
+            public boolean test(int value) { // 사용자 정의 기능
+                return value % 2 == 0;
             }
         }).sum();
         System.out.println(sum);
+
+
+        int sum2 = Arrays.stream(nums).filter(x -> x % 2 == 1).sum();
+        System.out.println(sum2);
     }
 }
