@@ -9,7 +9,13 @@ public class Ex01 {
             }
         };
 
-        Calculator cal2 = (a, b) -> a + b;
+        Calculator cal2 = (a, b) -> {
+            System.out.println("테스트");
+            return a + b;
+        };
+
+        Calculator cal3 = (a, b) -> a + b;
+
         int result = cal2.add(10, 20);
         System.out.println(result);
     }
